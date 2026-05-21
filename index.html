@@ -100,7 +100,8 @@ h2{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3.5vw,2.6rem);fon
 
 /* STRUGGLING SECTION */
 .struggling{background:var(--white)}
-.struggling-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;margin-top:3rem}
+.struggling-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+@media(max-width:900px){.struggling-grid{grid-template-columns:1fr}}
 .struggle-card{border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);background:var(--white);transition:box-shadow .25s,transform .25s}.struggle-card:hover{box-shadow:0 8px 30px rgba(0,0,0,0.1);transform:translateY(-3px)}
 .struggle-img{width:100%;height:200px;object-fit:cover;display:block}
 .struggle-body{padding:1.25rem}
@@ -315,31 +316,24 @@ footer{background:var(--navy);padding:3rem 2.5rem}
     <p class="section-sub">You built a great business — but growth brought new problems. Missed calls, slow follow-up, and manual processes are holding you back. You're not alone.</p>
     <div class="struggling-grid">
       <div class="struggle-card">
-        <img class="struggle-img" src="https://images.unsplash.com/photo-1556745757-8d76bdb6984b?w=600&q=80&auto=format&fit=crop" alt="Overwhelmed business owner on phone"/>
+        <img class="struggle-img" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&q=80&auto=format&fit=crop" alt="Business owner missing a call while with a customer"/>
         <div class="struggle-body">
           <h3>Drowning in Missed Calls</h3>
           <p>Your phone rings while you're with a customer, in a meeting, or off the clock. Every missed call is a potential client going to your competitor.</p>
         </div>
       </div>
       <div class="struggle-card">
-        <img class="struggle-img" src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80&auto=format&fit=crop" alt="Small business team overwhelmed"/>
+        <img class="struggle-img" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80&auto=format&fit=crop" alt="Team tracking leads manually on spreadsheets"/>
         <div class="struggle-body">
           <h3>Leads Slipping Through the Cracks</h3>
           <p>New inquiries come in but follow-up is inconsistent. Your team is stretched thin and manually tracking leads in spreadsheets or sticky notes.</p>
         </div>
       </div>
       <div class="struggle-card">
-        <img class="struggle-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80&auto=format&fit=crop" alt="Auto dealer reviewing inventory"/>
+        <img class="struggle-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80&auto=format&fit=crop" alt="Person doing manual research and data analysis"/>
         <div class="struggle-body">
           <h3>Hours Lost to Manual Research</h3>
           <p>Whether you're sourcing inventory, qualifying leads, or scheduling appointments — hours of your day go to work that AI can do in seconds.</p>
-        </div>
-      </div>
-      <div class="struggle-card">
-        <img class="struggle-img" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80&auto=format&fit=crop" alt="Business owner stressed at desk"/>
-        <div class="struggle-body">
-          <h3>Growing Pains Are Real</h3>
-          <p>You can't hire fast enough to keep up. The cost of more staff keeps climbing — but the problems don't go away. There's a smarter way to scale.</p>
         </div>
       </div>
     </div>
